@@ -1,71 +1,45 @@
 <?php
- $hola = "<h1>Hola Mundo</h1>" ;
- echo "$hola" ;
- //ENTEROS
- $numero1 = 35 ;
+//PUNTO 1
+ echo "<h3> Punto 1 </h3>" ;
+ $num1 = 19 ;
+
+if ($num1 > 0) {
+  echo "El numero ingresado es positivo" ;
+}
+
+//PUNTO 2
+ echo "<h3> Punto 2 </h3>";
+ $num2 = 3 ;
+ if ($num2 <10 || $num2 >1) {
+  echo "El numero ingresado es mayor a 1 y menor a 10";
+ }
+
+//PUNTO 3
+ echo "<h3> Punto  3 </h3>";
+ $num3 = 9 ;
+
+ if ($num3 >= 10 || $num3 <2) {
+   echo "El número ingresado es mayor o igual a 10 o menor a 2";
+ } else {
+  echo "El número ingresado no pudo ser validado";
+ }
+
+//PUNTO 4
+ echo "<h3> Punto 4 </h3>";
+ $numero1 = 8 ;
  $numero2 = 5 ;
 
- //PUNTO 3
- $suma = $numero1 + $numero2 ;
- $resta = $numero1 - $numero2 ;
- $multiplicacion = $numero1 * $numero2 ;
- $division = $numero1 / $numero2 ;
- $resto = $numero1 % $numero2 ;
+ if ($numero1 > $numero2) {
+   $resta = $numero1 - $numero2 ;
+   $suma = $numero1 + $numero2 ;
+   echo "Suma: $suma" . "<br>" . "Resta: $resta" . "<br>";
+ } elseif ($numero2 > $numero1) {
+   $mult = $numero1 * $numero2 ;
+   $div = $numero2 / $numero2 ;
+   $resto = $numero2 % $numero1 ;
+   echo "Multiplicacion: $mult" . "<br>" . "Division: $div". "<br>". "Resto: $resto";
+ } else {
+   echo "Los numeros ingresados son iguales.";
+ }
 
- //ecos p3
- echo "<h3> PUNTO 3 </h3>";
- echo "La suma de $numero1 y $numero2 es igual a $suma";
- echo "<br>";
- echo "La resta de $numero1 y $numero2 es igual a $resta";
- echo "<br>";
- echo "La multiplicacion de $numero1 y $numero2 es igual a $multiplicacion";
- echo "<br>";
- echo "La division de $numero1 y $numero2 es igual a $division";
- echo "<br>";
- echo "El resto de $numero1 y $numero2 es igual a $resto";
- echo "<br>";
-
- //PUNTO 4
- $faren = 32 ;
- $celsius = 20 ;
-
- //calculo
- $temp = $celsius * 9/5 + $faren ;
-
- //eco p4
- echo "<h3> PUNTO 4 </h3>";
- echo "La temperatura de $celsius °C es igual a $temp °F";
- echo "<br>";
-
- /*PUNTO 5
-   rectangulo*/
- $altura = 12 ;
- $base = 18 ;
-
-//calculos
- $arear = $altura * $base ;
- $perimer = $altura + $base + $altura +$base ;
-
- //eco p5 rec
- echo "<h3> PUNTO 5 </h3>";
- echo "<h4>RECTANGULO</h4>";
- echo "El area de un rectangulo de $altura cm de altura y $base cm de base es igual a $arear";
- echo "<br>";
- echo "El perimetro del mismo rectangulo es igual a $perimer";
- echo "<br>";
-
- //circulo
- $pi  = 3.14159 ;
- $radio = 30 ;
- $radio2 = $radio * $radio ;
-
-//calculos
- $perimec = 2 * $pi * $radio ;
- $areac = $pi * $radio2 ;
-
- //eco p5 circulo
- echo "<h4>CIRCULO</h4>";
- echo "El area de un circulo de radio $radio cm es igual a $areac cm";
- echo "<br>";
- echo "El perimetro del mismo es igual $perimec cm";
  ?>
